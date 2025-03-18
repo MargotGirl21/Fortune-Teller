@@ -3,7 +3,7 @@ import csv
 print("~----------------------------------~")
 print("|                                  |")
 print("|                                  |")
-print("| Welcome to your daily horoscope! |")
+print("|   Welcome to the fortune teller  |")
 print("|                                  |")
 print("|                                  |")
 print("~----------------------------------~")
