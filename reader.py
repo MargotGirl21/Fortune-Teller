@@ -1,8 +1,15 @@
 import csv
 
-print('Welcome to your daily horoscope!')
+print("~----------------------------------~")
+print("|                                  |")
+print("|                                  |")
+print("| Welcome to your daily horoscope! |")
+print("|                                  |")
+print("|                                  |")
+print("~----------------------------------~")
 
-user_month = input("First, tell me the month you were born in (1-12)")
+user_year = input("What year were you born in?")
+user_month = input("What month you were born in (1-12)")
 user_day = input("What day is your birthday?" )
 
 def csv_reader(file):
@@ -19,7 +26,12 @@ def sign_reader(user_month, user_day, horoscope_data):
     user_month, user_day= str(user_month), str(user_day)
     for month, day, star_sign, fortune in horoscope_data:
         if day == user_day and month == user_month:
-            print(f'Your star sign is {star_sign}')
+            print(f'Here is your fortune card. Take it to the oracle:')
+            print(" ~-------------~")
+            print(" |             |")
+            print(f"    {star_sign}  ")
+            print(" |             |")
+            print(" ~-------------~")
             return star_sign, fortune
     return None, None
 
